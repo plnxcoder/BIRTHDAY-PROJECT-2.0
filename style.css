@@ -1,0 +1,205 @@
+body {
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(to bottom, #fcdede, #fbeaea);
+  text-align: center;
+  color: #b30059;
+  animation: fadeIn 2s ease-in-out;
+
+}
+
+.hero h1 {
+  animation: fadeIn 5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add your styling here */
+.hero {
+  background: url('https://example.com/hero-image.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+}
+
+/* Animation styles */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+#surpriseImage {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+
+}
+
+#togetherImage {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 3.5s ease-in-out;
+
+
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+
+}
+
+.heart-button {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 11px;
+  text-align: center;
+  padding-top: 15px;
+  transition: transform 0.2s ease;
+  z-index: 1;
+  rotate: -45deg;
+}
+
+.heart-button:hover {
+  transform: scale(1.1);
+}
+
+.heart-button::before,
+.heart-button::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 55px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.heart-button::before {
+  top: -25px;
+  left: 0;
+}
+
+.heart-button::after {
+  left: 25px;
+  top: 0;
+}
+
+#audio {
+  padding: 20px;
+}
+
+#war {
+  color: red;
+  font-style: bold;
+}
+
+h4 {
+  color: black;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Image styles */
+.image-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-rounded {
+  border-radius: 50%;
+}
+
+.image-thumbnail {
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Icon styles */
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Responsive images */
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b30059;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a2004d;
+}
+
+/* Transition effects */
+.transition {
+  transition: all 0.3s ease;
+}
